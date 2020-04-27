@@ -1,0 +1,9 @@
+<div>
+    <ul id="burgers">
+      <li *ngFor="let burger of burgers">
+        <p>Burger n° {{burger.id}} : {{burger.name}}</p>
+        <p>Prix : {{burger.price}} €</p>
+        <img width=300 src="{{burger.image}}"/>
+      </li>
+    </ul>
+  </div>

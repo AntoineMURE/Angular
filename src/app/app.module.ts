@@ -4,15 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ApiModule } from './rest';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { ListBurgersComponent } from './list-burgers/list-burgers.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListBurgersComponent
   ],
   imports: [
     BrowserModule,
     ApiModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
